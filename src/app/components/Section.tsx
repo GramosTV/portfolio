@@ -1,15 +1,18 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 interface SectionProps {
   id: string;
-  title: string;
+  titleKey: string; // Changed from title to titleKey
   children: React.ReactNode;
   className?: string;
 }
 
-const Section: React.FC<SectionProps> = ({ id, title, children, className }) => {
+const Section: React.FC<SectionProps> = ({ id, titleKey, children, className }) => {
+  const t = useTranslations('PageContent'); // Assuming PageContent contains section titles
+
   return (
     <motion.section
       id={id}
@@ -27,7 +30,7 @@ const Section: React.FC<SectionProps> = ({ id, title, children, className }) => 
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
         >
-          {title}
+          {t(titleKey)} {/* Use translation for the title */}
         </motion.h2>
         {children}
       </div>
