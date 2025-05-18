@@ -25,14 +25,15 @@ const Card: React.FC<CardProps> = ({ titleKey, subtitleKey, descriptionKey, date
   const t = useTranslations('PageContent');
   return (
     <motion.div
-      className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col h-full"
+      className="bg-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col h-full"
       variants={cardVariants}
     >
-      {icon && <div className="text-sky-500 mb-3 self-start">{icon}</div>}
-      <h3 className="text-xl font-semibold text-slate-800 mb-1">{t(titleKey)}</h3>
-      {subtitleKey && <h4 className="text-md font-medium text-sky-600 mb-2">{t(subtitleKey)}</h4>}
-      {dateKey && <p className="text-sm text-slate-500 mb-3">{t(dateKey)}</p>}
-      <p className="text-slate-600 leading-relaxed text-sm flex-grow">{t(descriptionKey)}</p>
+      {' '}
+      {icon && <div className="text-sky-500 mb-2 sm:mb-3 self-start">{icon}</div>}
+      <h3 className="text-lg sm:text-xl font-semibold text-slate-800 mb-1">{t(titleKey)}</h3>
+      {subtitleKey && <h4 className="text-sm sm:text-md font-medium text-sky-600 mb-1 sm:mb-2">{t(subtitleKey)}</h4>}
+      {dateKey && <p className="text-xs sm:text-sm text-slate-500 mb-2 sm:mb-3">{t(dateKey)}</p>}
+      <p className="text-slate-600 leading-relaxed text-xs sm:text-sm flex-grow">{t(descriptionKey)}</p>
     </motion.div>
   );
 };

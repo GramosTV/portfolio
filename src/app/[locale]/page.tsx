@@ -49,8 +49,8 @@ const skillTagVariants = {
     },
   }),
   hover: {
-    scale: 1.1,
-    boxShadow: '0px 0px 8px rgba(0,0,0,0.2)',
+    scale: 1.03,
+    boxShadow: '0px 0px 4px rgba(0,0,0,0.1)',
     transition: { duration: 0.2 },
   },
 };
@@ -142,7 +142,7 @@ export default function Home() {
         />
 
         <motion.h1
-          className="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-6 tracking-tight relative z-10"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 sm:mb-6 tracking-tight relative z-10 px-4"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
@@ -150,7 +150,7 @@ export default function Home() {
           {t('heroName')}
         </motion.h1>
         <motion.p
-          className="text-2xl sm:text-3xl text-sky-200 mb-10 max-w-2xl mx-auto relative z-10"
+          className="text-xl sm:text-2xl md:text-3xl text-sky-200 mb-8 sm:mb-10 max-w-2xl mx-auto relative z-10 px-4 sm:px-6"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4, ease: 'easeOut' }}
@@ -165,22 +165,22 @@ export default function Home() {
         >
           <Link
             href="#contact"
-            className="bg-white text-indigo-600 font-semibold py-3.5 px-10 rounded-lg shadow-xl hover:bg-slate-100 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 ease-out flex items-center group text-lg"
+            className="bg-white text-indigo-600 font-semibold py-3 sm:py-3.5 px-6 sm:px-8 md:px-10 rounded-lg shadow-xl hover:bg-slate-100 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 ease-out flex items-center group text-base sm:text-lg"
           >
             {t('heroCta')}{' '}
-            <FiArrowRight className="ml-2.5 transition-transform duration-300 group-hover:translate-x-1.5" />
+            <FiArrowRight className="ml-1.5 sm:ml-2.5 transition-transform duration-300 group-hover:translate-x-1.5" />
           </Link>
         </motion.div>
       </motion.div>
       <Section id="about" titleKey="aboutTitle" className="bg-slate-50/50">
         <motion.div
-          className="text-lg text-center max-w-4xl mx-auto leading-relaxed text-slate-700 grid gap-8"
+          className="text-base sm:text-lg text-center max-w-4xl mx-auto leading-relaxed text-slate-700 grid gap-6 sm:gap-8 px-2 sm:px-4"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          <motion.p variants={itemVariants} className="text-xl">
+          <motion.p variants={itemVariants} className="text-lg sm:text-xl">
             {t('aboutParagraph1')}
           </motion.p>
           <motion.p variants={itemVariants}>{t('aboutParagraph2')}</motion.p>
@@ -191,7 +191,7 @@ export default function Home() {
       {/* Projects Section */}
       <Section id="projects" titleKey="projectsTitle">
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -229,7 +229,7 @@ export default function Home() {
 
       <Section id="experience" titleKey="experienceTitle" className="bg-slate-50/50">
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -260,7 +260,7 @@ export default function Home() {
       </Section>
       <Section id="education" titleKey="educationTitle">
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -288,12 +288,12 @@ export default function Home() {
         </motion.div>
       </Section>
       <Section id="skills" titleKey="skillsTitle" className="bg-slate-50/50">
-        <div className="mb-12">
-          <h3 className="text-3xl font-semibold mb-8 text-slate-700 text-center flex items-center justify-center">
-            <FaStar className="mr-3 text-amber-400" /> {t('skillsExpertLevel')}
+        <div className="mb-10 sm:mb-12">
+          <h3 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-slate-700 text-center flex flex-wrap items-center justify-center">
+            <FaStar className="mr-2 sm:mr-3 text-amber-400" /> <span>{t('skillsExpertLevel')}</span>
           </h3>
           <motion.div
-            className="flex flex-wrap justify-center gap-4 md:gap-5"
+            className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-5"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -302,7 +302,7 @@ export default function Home() {
             {skillsAdvanced.map((skill, index) => (
               <motion.div
                 key={skill.name}
-                className="bg-sky-600 text-white py-3 px-6 rounded-lg text-md font-semibold shadow-lg hover:bg-sky-700 transition-colors duration-300 flex items-center cursor-pointer transform hover:scale-105"
+                className="bg-sky-600 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg text-sm sm:text-md font-semibold shadow-md hover:bg-sky-500 transition-all duration-200 flex items-center cursor-pointer transform hover:scale-[1.02]"
                 custom={index}
                 variants={skillTagVariants}
                 whileHover="hover"
@@ -313,12 +313,12 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-        <div className="mb-12">
-          <h3 className="text-3xl font-semibold mb-8 text-slate-700 text-center flex items-center justify-center">
-            <FaRegStar className="mr-3 text-sky-500" /> {t('skillsProficientLevel')}
+        <div className="mb-10 sm:mb-12">
+          <h3 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-slate-700 text-center flex flex-wrap items-center justify-center">
+            <FaRegStar className="mr-2 sm:mr-3 text-sky-500" /> <span>{t('skillsProficientLevel')}</span>
           </h3>
           <motion.div
-            className="flex flex-wrap justify-center gap-4 md:gap-5"
+            className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-5"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
@@ -327,7 +327,7 @@ export default function Home() {
             {skillsBeginner.map((skill, index) => (
               <motion.div
                 key={skill.name}
-                className="bg-slate-200 text-slate-800 py-3 px-6 rounded-lg text-md font-medium shadow-md hover:bg-slate-300 transition-colors duration-300 flex items-center cursor-pointer transform hover:scale-105"
+                className="bg-slate-200 text-slate-800 py-2 sm:py-3 px-4 sm:px-6 rounded-lg text-sm sm:text-md font-medium shadow-sm hover:bg-slate-100 transition-all duration-200 flex items-center cursor-pointer transform hover:scale-[1.02]"
                 custom={index}
                 variants={skillTagVariants}
                 whileHover="hover"
@@ -352,7 +352,7 @@ export default function Home() {
       {/* Testimonials Section */}
       <Section id="testimonials" titleKey="testimonialsTitle">
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -374,13 +374,15 @@ export default function Home() {
       {/* Contact Section */}
       <Section id="contact" titleKey="contactTitle" className="bg-slate-50/50">
         <motion.div
-          className="max-w-xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg border border-slate-100"
+          className="max-w-xl mx-auto bg-white p-6 sm:p-8 md:p-12 rounded-xl shadow-lg border border-slate-100"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <p className="text-center text-slate-600 mb-10 text-xl leading-relaxed">{t('contactIntro')}</p>
+          <p className="text-center text-slate-600 mb-6 sm:mb-8 md:mb-10 text-lg sm:text-xl leading-relaxed px-1">
+            {t('contactIntro')}
+          </p>
           <div className="space-y-6">
             {[
               {
@@ -413,7 +415,7 @@ export default function Home() {
                 href={item.href}
                 target={item.href.startsWith('http') ? '_blank' : undefined}
                 rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="flex items-center p-4 bg-slate-50 rounded-lg hover:bg-sky-50 transition-all duration-300 group border border-slate-200 hover:border-sky-300 shadow-md hover:shadow-sky-200/40 transform hover:scale-[1.02]"
+                className="flex items-center p-3 sm:p-4 bg-slate-50 rounded-lg hover:bg-sky-50 transition-all duration-300 group border border-slate-200 hover:border-sky-300 shadow-md hover:shadow-sky-200/40 transform hover:scale-[1.02]"
                 initial={{ opacity: 0, x: -25 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
@@ -424,10 +426,12 @@ export default function Home() {
                   {item.icon}
                 </span>
                 <div className="flex-grow">
-                  <span className="text-slate-800 group-hover:text-sky-700 font-semibold transition-colors text-lg">
+                  <span className="text-slate-800 group-hover:text-sky-700 font-semibold transition-colors text-base sm:text-lg">
                     {t(item.labelKey)}
                   </span>
-                  <p className="text-sm text-slate-500 group-hover:text-sky-600 transition-colors">{item.text}</p>
+                  <p className="text-xs sm:text-sm text-slate-500 group-hover:text-sky-600 transition-colors">
+                    {item.text}
+                  </p>
                 </div>
                 <FiArrowRight
                   className="ml-auto text-slate-400 group-hover:text-sky-500 transition-all duration-300 group-hover:translate-x-1 opacity-50 group-hover:opacity-100"

@@ -23,6 +23,11 @@ const navItemVariants = {
   visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.3, ease: 'easeOut' } },
 };
 
+const logoVariant = {
+  hidden: { opacity: 0, y: -10, scale: 0.97 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.2, ease: 'easeOut' } },
+};
+
 const Header = () => {
   const t = useTranslations('Header');
   const { scrollY } = useScroll();
@@ -64,26 +69,23 @@ const Header = () => {
         backgroundColor: useTransform(scrollY, [0, 100], ['rgba(15, 23, 42, 0)', 'rgba(15, 23, 42, 0.8)']),
         boxShadow: headerShadow,
       }}
-      className={`p-4 fixed w-full z-50 top-0 transition-all duration-300 ease-out ${
+      className={`py-3 sm:py-4 px-3 sm:px-4 fixed w-full z-50 top-0 transition-all duration-300 ease-in-out ${
         isScrolled ? 'text-slate-100' : 'text-slate-800'
       }`}
     >
+      {' '}
       <div className="container mx-auto flex justify-between items-center">
+        {' '}
         <Link
           href="/" // Will be prefixed by middleware
-          className={`text-2xl md:text-3xl font-bold tracking-tight ${
-            isScrolled ? 'hover:text-sky-400' : 'hover:text-sky-600'
-          } transition-colors duration-300`}
+          className={`text-xl sm:text-2xl md:text-3xl font-bold tracking-tight ${
+            isScrolled ? 'text-slate-100 hover:text-sky-400' : 'text-slate-800 hover:text-sky-600'
+          } transition-all duration-200`}
         >
-          <motion.span
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.1, duration: 0.4 }}
-          >
+          <motion.span variants={logoVariant} initial="hidden" animate="visible" className="truncate">
             Mikołaj Gramowski
           </motion.span>
         </Link>
-
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-4">
           <motion.ul
@@ -97,8 +99,8 @@ const Header = () => {
                 <Link
                   href={item.href}
                   className={`hover:bg-sky-500/20 ${
-                    isScrolled ? 'text-slate-200 hover:text-white' : 'text-inherit hover:text-sky-600'
-                  } transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium`}
+                    isScrolled ? 'text-slate-100 hover:text-white' : 'text-slate-800 hover:text-sky-600'
+                  } transition-all duration-200 px-3 py-2 rounded-md text-sm font-medium`}
                 >
                   {t(item.labelKey)}
                 </Link>
@@ -107,26 +109,24 @@ const Header = () => {
           </motion.ul>
           <LanguageSwitcher />
         </nav>
-
         {/* Mobile Menu Button & Language Switcher */}
         <div className="md:hidden flex items-center space-x-2">
           <LanguageSwitcher />
           <motion.button
             onClick={toggleMobileMenu}
             className={`${
-              isScrolled ? 'text-slate-200 hover:text-white' : 'text-inherit hover:text-sky-600'
-            } focus:outline-none p-2 rounded-md hover:bg-sky-500/30 transition-colors`}
+              isScrolled ? 'text-slate-100 hover:text-white' : 'text-slate-800 hover:text-sky-600'
+            } focus:outline-none p-2 rounded-md hover:bg-sky-500/30 transition-all duration-200`}
             whileTap={{ scale: 0.9 }}
           >
             {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </motion.button>
         </div>
       </div>
-
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <motion.div
-          className="md:hidden absolute top-full left-0 right-0 bg-slate-800/95 backdrop-blur-md shadow-lg pb-4"
+          className="md:hidden fixed top-[60px] left-0 right-0 bg-slate-800/95 backdrop-blur-md shadow-lg pb-4 max-h-[80vh] overflow-y-auto z-50"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
@@ -139,11 +139,12 @@ const Header = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: item.href.length * 0.02 }}
+                className="w-full px-4"
               >
                 <Link
                   href={item.href}
                   onClick={toggleMobileMenu} // Close menu on click
-                  className="block text-slate-200 hover:text-sky-300 transition-colors duration-300 py-3 px-4 rounded-md text-base font-medium w-full text-center hover:bg-slate-700/50"
+                  className="block text-slate-100 hover:text-sky-300 transition-all duration-200 py-3 px-4 rounded-md text-base font-medium w-full text-center hover:bg-slate-700/50"
                 >
                   {t(item.labelKey)}
                 </Link>

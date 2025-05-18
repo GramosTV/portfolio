@@ -1,53 +1,41 @@
 'use client';
 
 import { useTranslations, useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation'; // Corrected import
+import { useRouter, usePathname } from 'next/navigation';
 import { locales } from '@/i18n';
 
 export default function LanguageSwitcher() {
   const t = useTranslations('LanguageSwitcher');
   const currentLocale = useLocale();
   const router = useRouter();
-  const currentPathname = usePathname(); // Renamed to avoid confusion
+  const currentPathname = usePathname();
 
   const onSelectChange = (newLocale: string) => {
-    // Construct the new pathname by removing the current locale prefix (if present)
-    // and then prepending the new locale.
-    let basePath = currentPathname;
-    if (basePath.startsWith(`/${currentLocale}`)) {
-      basePath = basePath.substring(currentLocale.length + 1) || '/';
-    }
-    // Ensure basePath starts with a slash if it's not just "/"
-    if (basePath !== '/' && !basePath.startsWith('/')) {
-      basePath = `/${basePath}`;
-    }
+    // Skip if the locale is already the current one
+    if (newLocale === currentLocale) return;
 
-    let newPath = `/${newLocale}${basePath === '/' ? '' : basePath}`;
+    // Handle path replacement for locale
+    const segments = currentPathname.split('/');
 
-    // Normalize: remove trailing slash if it's not the root of the site (e.g. /pl/ -> /pl)
-    if (newPath.length > 1 && newPath.endsWith('/') && newPath !== `/${newLocale}/`) {
-      newPath = newPath.slice(0, -1);
-    }
-    // Special case for root: /en/ should become /en, not /en/
-    if (basePath === '/' && newPath.endsWith('/') && newPath.length > `/${newLocale}`.length) {
-      newPath = `/${newLocale}`;
-    }
+    // The first segment after the initial slash is the locale in the [locale] folder structure
+    segments[1] = newLocale;
 
-    // Only navigate if the new path is different or locale changes
-    if (newPath !== currentPathname || newLocale !== currentLocale) {
-      router.replace(newPath);
-    }
+    // Join back into path
+    const newPath = segments.join('/');
+
+    // Navigate to the new path with the new locale
+    router.push(newPath);
   };
-
   return (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center space-x-1 sm:space-x-2">
       {(locales as string[]).map((loc) => (
         <button
           key={loc}
           onClick={() => onSelectChange(loc)}
-          className={`px-3 py-2 rounded-md text-sm font-medium transition-colors
+          className={`px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-all duration-200
             ${currentLocale === loc ? 'bg-sky-500 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}
           `}
+          aria-label={`Switch language to ${t(loc)}`}
         >
           {t(loc)}
         </button>

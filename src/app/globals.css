@@ -27,6 +27,13 @@ body {
   @apply bg-slate-50 text-slate-800 antialiased;
 }
 
+body {
+  overflow-x: hidden;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .container {
   @apply px-4 sm:px-6 lg:px-8;
 }
