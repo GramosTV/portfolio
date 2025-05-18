@@ -30,6 +30,7 @@ export default async function RootLayout({
   params: { locale: string };
 }) {
   // Safely extract and validate the locale
+
   const locale = params?.locale || 'en';
 
   // Get messages for this locale

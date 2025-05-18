@@ -78,7 +78,7 @@ const Header = () => {
         {' '}
         <Link
           href="/" // Will be prefixed by middleware
-          className={`text-xl sm:text-2xl md:text-3xl font-bold tracking-tight ${
+          className={`text-xl sm:text-2xl md:text-3xl font-bold tracking-tight flex justify-center items-center ${
             isScrolled ? 'text-slate-100 hover:text-sky-400' : 'text-slate-800 hover:text-sky-600'
           } transition-all duration-200`}
         >

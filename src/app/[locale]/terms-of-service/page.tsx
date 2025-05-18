@@ -1,5 +1,3 @@
-\
-// filepath: c:\\Users\\gramo\\Desktop\\sites\\jira\\jira-website\\src\\app\\[locale]\\terms-of-service\\page.tsx
 'use client';
 
 import { useTranslations } from 'next-intl';
