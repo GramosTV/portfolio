@@ -129,6 +129,20 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: 'easeInOut' }}
       >
+        {/* Background Image Overlay */}
+        <div
+          className="absolute bottom-0 left-0 right-0 z-0 opacity-15"
+          style={{
+            backgroundImage: 'url("/Panorama.png")',
+            backgroundSize: 'contain',
+            backgroundPosition: 'bottom center',
+            backgroundRepeat: 'no-repeat',
+            width: '100%',
+            height: '50%',
+            mixBlendMode: 'overlay',
+          }}
+        ></div>
+
         {/* Subtle moving shapes for depth */}
         <motion.div
           className="absolute top-1/4 left-1/4 w-32 h-32 bg-white/10 rounded-full filter blur-xl animate-pulse-slow"
