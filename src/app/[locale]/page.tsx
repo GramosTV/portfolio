@@ -97,6 +97,13 @@ export default function Home() {
       projectUrl: 'https://github.com/GramosTV/nestjs-security-scan',
       techStack: t.raw('project3TechStack') as string[],
     },
+    {
+      titleKey: 'project4Title',
+      descriptionKey: 'project4Description',
+      imageUrl: '/healthcare-dotnet.png',
+      projectUrl: 'https://github.com/GramosTV/zelqora-client',
+      techStack: t.raw('project4TechStack') as string[],
+    },
   ];
 
   const testimonialsData = [

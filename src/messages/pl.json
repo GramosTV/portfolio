@@ -44,7 +44,10 @@
     "project2Tech": "NestJS, JWT, TypeORM, PostgreSQL, Bcrypt, Fastify, Handlebars, Passport.js, TypeScript",
     "project3Title": "Skaner Bezpieczeństwa dla NestJS",
     "project3Description": "Potężny skaner podatności bezpieczeństwa dla aplikacji NestJS. Funkcje obejmują skanowanie zależności (npm audit, Snyk), analizę kodu pod kątem typowych problemów bezpieczeństwa, walidację konfiguracji, szczegółowe raporty oraz interfejs CLI.",
-    "project3Tech": ["NestJS", "Node.js", "TypeScript", "Snyk", "npm audit", "CLI", "Cybersecurity"]
+    "project3Tech": ["NestJS", "Node.js", "TypeScript", "Snyk", "npm audit", "CLI", "Cybersecurity"],
+    "project4Title": "API i Aplikacja Opieki Zdrowotnej",
+    "project4Description": "Backend .NET Web API i frontend Angular dla aplikacji opieki zdrowotnej, zapewniające uwierzytelnianie, zarządzanie użytkownikami, planowanie wizyt, przesyłanie wiadomości i przypomnienia.",
+    "project4Tech": "ASP.NET Core, Entity Framework Core, MySQL, JWT, Angular"
   },
   "Education": {
     "title": "Edukacja",
@@ -231,6 +234,9 @@
     "project3TechStack": ["NestJS", "Node.js", "TypeScript", "Snyk", "npm audit", "CLI", "Cybersecurity"],
     "viewProjectButton": "Zobacz Projekt",
     "technologiesUsed": "Użyte Technologie:",
+    "project4Title": "API i Aplikacja Opieki Zdrowotnej",
+    "project4Description": "Kompleksowe rozwiązanie dla opieki zdrowotnej obejmujące backend .NET Web API oraz frontend Angular. Obsługuje uwierzytelnianie oparte na JWT, zarządzanie użytkownikami z kontrolą dostępu opartą na rolach, planowanie wizyt, bezpieczne przesyłanie wiadomości między pacjentami a dostawcami usług oraz automatyczne przypomnienia.",
+    "project4TechStack": ["ASP.NET Core", "Entity Framework Core", "MySQL", "JWT Authentication", "Angular"],
     "testimonial1Quote": "Twórca ciężko pracował i szybko oraz profesjonalnie ukończył produkt. Zadawał wiele pytań i robił wszystko, co w jego mocy, aby dostarczyć produkt z każdym satysfakcjonującym szczegółem, o który prosiłem. Ogólnie rzecz biorąc, wykonał profesjonalną pracę i poleciłbym go innym.",
     "testimonial1Name": "kane40xwolfman",
     "testimonial1Role": "Klient Fiverr",

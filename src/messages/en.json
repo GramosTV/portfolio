@@ -44,7 +44,10 @@
     "project2Tech": "NestJS, JWT, TypeORM, PostgreSQL, Bcrypt, Fastify, Handlebars, Passport.js, TypeScript",
     "project3Title": "NestJS Security Scan",
     "project3Description": "A powerful security vulnerability scanner for NestJS applications. Features dependency scanning (npm audit, Snyk), code analysis for common security issues, configuration validation, detailed reports, and a CLI interface.",
-    "project3Tech": "NestJS, Node.js, TypeScript, Snyk, npm audit, CLI"
+    "project3Tech": ["NestJS", "Node.js", "TypeScript", "Snyk", "npm audit", "CLI", "Cybersecurity"],
+    "project4Title": "Healthcare API & App",
+    "project4Description": "A .NET Web API backend and Angular frontend for a healthcare application providing authentication, user management, appointment scheduling, messaging, and reminders.",
+    "project4Tech": "ASP.NET Core, Entity Framework Core, MySQL, JWT, Angular"
   },
   "Education": {
     "title": "Education",
@@ -222,6 +225,9 @@
     "project3TechStack": ["NestJS", "Node.js", "TypeScript", "Snyk", "npm audit", "CLI", "Cybersecurity"],
     "viewProjectButton": "View Project",
     "technologiesUsed": "Technologies Used:",
+    "project4Title": "Healthcare API & App",
+    "project4Description": "A comprehensive healthcare solution featuring a .NET Web API backend and an Angular frontend. It supports JWT-based authentication, user management with role-based access control, appointment scheduling, secure messaging between patients and providers, and automated reminders.",
+    "project4TechStack": ["ASP.NET Core", "Entity Framework Core", "MySQL", "JWT Authentication", "Angular"],
     "testimonial1Quote": "The creator worked hard, and finished the product quickly, and professionally. He asked a lot of questions, and did his best to deliver the product with every satisfying detail I asked for. Overall, he did a professional job, and I'd recommend him to others.",
     "testimonial1Name": "kane40xwolfman",
     "testimonial1Role": "Fiverr Client",
