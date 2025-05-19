@@ -1,5 +1,4 @@
-import { getRequestConfig } from 'next-intl/server';
-import { notFound } from 'next/navigation';
+import { getRequestConfig, RequestConfig } from 'next-intl/server';
 
 // Define our supported locales
 export const locales = ['en', 'pl'];
@@ -11,10 +10,11 @@ export function isValidLocale(locale: string): boolean {
 }
 
 // This is the configuration for next-intl used in the app/[locale] layout
-export default getRequestConfig(async ({ locale }) => {
+export default getRequestConfig(async ({ locale }): Promise<RequestConfig> => {
+  const currentLocale = locale || defaultLocale;
   // Validate that the incoming locale parameter is valid
-  if (!locales.includes(locale as any)) {
-    console.warn(`Invalid locale: "${locale}", falling back to "${defaultLocale}"`);
+  if (!locales.includes(currentLocale)) {
+    console.warn(`Invalid locale: "${currentLocale}", falling back to "${defaultLocale}"`);
     // Fall back to default locale with valid messages
     return {
       locale: defaultLocale,
@@ -25,11 +25,11 @@ export default getRequestConfig(async ({ locale }) => {
   // Try to load messages for the provided locale
   try {
     return {
-      locale,
-      messages: (await import(`./messages/${locale}.json`)).default,
+      locale: currentLocale,
+      messages: (await import(`./messages/${currentLocale}.json`)).default,
     };
   } catch (error) {
-    console.error(`Failed to load messages for locale ${locale}:`, error);
+    console.error(`Failed to load messages for locale ${currentLocale}:`, error);
     // Fall back to default locale
     return {
       locale: defaultLocale,

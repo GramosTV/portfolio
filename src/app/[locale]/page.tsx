@@ -7,20 +7,20 @@ import TestimonialCard from '@/app/components/TestimonialCard';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { FiGitMerge, FiArrowRight } from 'react-icons/fi';
 import {
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
-  FaPhone,
-  FaBriefcase,
-  FaGraduationCap,
+  FaReact,
+  FaDatabase as FaDb,
   FaCode,
   FaPaintBrush,
-  FaStar,
+  FaGraduationCap,
+  FaStar as FaStarIcon,
   FaRegStar,
-  FaUserFriends,
+  FaPhone,
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
 } from 'react-icons/fa';
-import { FiArrowRight, FiAward, FiUsers, FiMessageSquare, FiLayers } from 'react-icons/fi';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -60,11 +60,11 @@ export default function Home() {
 
   const skillsAdvanced = [
     { name: t('skillsNestjs'), icon: <FaCode className="mr-2" /> },
-    { name: t('skillsMysqlMongodb'), icon: <FaCode className="mr-2" /> },
-    { name: t('skillsNextjs'), icon: <FaCode className="mr-2" /> },
+    { name: t('skillsMysqlMongodb'), icon: <FaDb className="mr-2" /> },
+    { name: t('skillsNextjs'), icon: <FaReact className="mr-2" /> },
     { name: t('skillsSassTailwind'), icon: <FaPaintBrush className="mr-2" /> },
-    { name: t('skillsReactNative'), icon: <FaCode className="mr-2" /> },
-    { name: t('skillsGit'), icon: <FaCode className="mr-2" /> },
+    { name: t('skillsReactNative'), icon: <FaReact className="mr-2" /> },
+    { name: t('skillsGit'), icon: <FiGitMerge className="mr-2" /> },
   ];
   const skillsBeginner = [
     { name: t('skillsDotNet'), icon: <FaCode className="mr-2" /> },
@@ -316,7 +316,7 @@ export default function Home() {
       <Section id="skills" titleKey="skillsTitle" className="bg-slate-50/50">
         <div className="mb-10 sm:mb-12">
           <h3 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-slate-700 text-center flex flex-wrap items-center justify-center">
-            <FaStar className="mr-2 sm:mr-3 text-amber-400" /> <span>{t('skillsExpertLevel')}</span>
+            <FaStarIcon className="mr-2 sm:mr-3 text-amber-400" /> <span>{t('skillsExpertLevel')}</span>
           </h3>
           <motion.div
             className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-5"

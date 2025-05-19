@@ -35,7 +35,6 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const headerOpacity = useTransform(scrollY, [0, 100], [1, 0.85]);
-  const headerBgOpacity = useTransform(scrollY, [0, 100], [0, 0.7]);
   const headerShadow = useTransform(
     scrollY,
     [0, 100],
@@ -65,7 +64,6 @@ const Header = () => {
     <motion.header
       style={{
         opacity: headerOpacity,
-        // @ts-ignore
         backdropFilter: isScrolled ? 'blur(10px)' : 'none',
         backgroundColor: useTransform(scrollY, [0, 100], ['rgba(15, 23, 42, 0)', 'rgba(15, 23, 42, 0.8)']),
         boxShadow: headerShadow,
