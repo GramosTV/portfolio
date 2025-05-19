@@ -220,6 +220,8 @@
     "project3Title": "NestJS Security Scan",
     "project3Description": "A powerful security vulnerability scanner for NestJS applications. Features dependency scanning (npm audit, Snyk), code analysis for common security issues, configuration validation, detailed reports, and a CLI interface.",
     "project3TechStack": ["NestJS", "Node.js", "TypeScript", "Snyk", "npm audit", "CLI", "Cybersecurity"],
+    "viewProjectButton": "View Project",
+    "technologiesUsed": "Technologies Used:",
     "testimonial1Quote": "The creator worked hard, and finished the product quickly, and professionally. He asked a lot of questions, and did his best to deliver the product with every satisfying detail I asked for. Overall, he did a professional job, and I'd recommend him to others.",
     "testimonial1Name": "kane40xwolfman",
     "testimonial1Role": "Fiverr Client",
