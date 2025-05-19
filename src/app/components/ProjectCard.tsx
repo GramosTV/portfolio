@@ -39,11 +39,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           src={imageUrl}
           alt={t(titleKey)} // Use translated title for alt text
           fill
+          unoptimized={imageUrl.includes('.gif')}
           sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
           style={{ objectFit: 'cover' }}
           className="transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
       </div>{' '}
       <div className="p-4 sm:p-6 flex flex-col flex-grow">
         <h3 className="text-xl sm:text-2xl font-semibold text-slate-800 mb-2">{t(titleKey)}</h3>

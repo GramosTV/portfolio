@@ -13,7 +13,7 @@ const Footer = () => {
   const socialLinks = [
     { href: 'https://github.com/gramostv', icon: <FaGithub size={20} />, labelKey: 'github' },
     { href: 'https://www.linkedin.com/in/mikolaj-gramowski', icon: <FaLinkedin size={20} />, labelKey: 'linkedin' },
-    { href: '#', icon: <FaTwitter size={20} />, labelKey: 'twitter' },
+    // { href: '#', icon: <FaTwitter size={20} />, labelKey: 'twitter' },
     { href: 'mailto:gramowskimikolaj@gmail.com', icon: <FaEnvelope size={20} />, labelKey: 'email' },
   ];
 

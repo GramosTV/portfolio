@@ -79,22 +79,22 @@ export default function Home() {
     {
       titleKey: 'project1Title',
       descriptionKey: 'project1Description',
-      imageUrl: '/placeholder-project-1.jpg',
-      projectUrl: '#',
+      imageUrl: '/gramet.gif',
+      projectUrl: 'https://github.com/GramosTV/gramet-client',
       techStack: t.raw('project1TechStack') as string[],
     },
     {
       titleKey: 'project2Title',
       descriptionKey: 'project2Description',
-      imageUrl: '/placeholder-project-2.jpg',
-      projectUrl: '#',
+      imageUrl: '/nest.png',
+      projectUrl: 'https://github.com/GramosTV/nestjs-automated-jwt-auth',
       techStack: t.raw('project2TechStack') as string[],
     },
     {
       titleKey: 'project3Title',
       descriptionKey: 'project3Description',
-      imageUrl: '/placeholder-project-3.jpg',
-      projectUrl: '#',
+      imageUrl: '/security.png',
+      projectUrl: 'https://github.com/GramosTV/nestjs-security-scan',
       techStack: t.raw('project3TechStack') as string[],
     },
   ];
@@ -104,19 +104,31 @@ export default function Home() {
       quoteKey: 'testimonial1Quote',
       nameKey: 'testimonial1Name',
       roleKey: 'testimonial1Role',
-      imageUrl: '/placeholder-avatar-1.jpg',
     },
     {
       quoteKey: 'testimonial2Quote',
       nameKey: 'testimonial2Name',
       roleKey: 'testimonial2Role',
-      imageUrl: '/placeholder-avatar-2.jpg',
     },
     {
       quoteKey: 'testimonial3Quote',
       nameKey: 'testimonial3Name',
       roleKey: 'testimonial3Role',
-      imageUrl: '/placeholder-avatar-3.jpg',
+    },
+    {
+      quoteKey: 'testimonial4Quote',
+      nameKey: 'testimonial4Name',
+      roleKey: 'testimonial4Role',
+    },
+    {
+      quoteKey: 'testimonial5Quote',
+      nameKey: 'testimonial5Name',
+      roleKey: 'testimonial5Role',
+    },
+    {
+      quoteKey: 'testimonial6Quote',
+      nameKey: 'testimonial6Name',
+      roleKey: 'testimonial6Role',
     },
   ];
 
@@ -133,12 +145,12 @@ export default function Home() {
         <div
           className="absolute bottom-0 left-0 right-0 z-0 opacity-15"
           style={{
-            backgroundImage: 'url("/Panorama.png")',
-            backgroundSize: 'contain',
+            backgroundImage: 'url("/Panorama.svg")',
+            backgroundSize: '100% 100%',
             backgroundPosition: 'bottom center',
             backgroundRepeat: 'no-repeat',
             width: '100%',
-            height: '50%',
+            height: '50vh',
             mixBlendMode: 'overlay',
           }}
         ></div>
@@ -240,7 +252,7 @@ export default function Home() {
           </Link>
         </motion.div>
       </Section>
-
+      {/* 
       <Section id="experience" titleKey="experienceTitle" className="bg-slate-50/50">
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10"
@@ -271,7 +283,7 @@ export default function Home() {
             descriptionKey="experienceLogisticsDescription"
           />
         </motion.div>
-      </Section>
+      </Section> */}
       <Section id="education" titleKey="educationTitle">
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10"
@@ -378,7 +390,6 @@ export default function Home() {
               quoteKey={testimonial.quoteKey}
               nameKey={testimonial.nameKey}
               roleKey={testimonial.roleKey}
-              imageUrl={testimonial.imageUrl}
               index={index}
             />
           ))}
