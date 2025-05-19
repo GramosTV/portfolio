@@ -46,7 +46,7 @@ export default async function RootLayout({
           <AnimatedGradientBackground />
           <div className="relative z-10">
             <Header />
-            <main className="min-h-screen pt-20">{children}</main>
+            <main className="min-h-screen pt-[74px]">{children}</main>
             <Footer />
           </div>
         </NextIntlClientProvider>

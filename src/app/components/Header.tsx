@@ -58,6 +58,7 @@ const Header = () => {
     { href: '#skills', labelKey: 'skills' },
     { href: '#testimonials', labelKey: 'testimonials' },
     { href: '#contact', labelKey: 'contact' },
+    { href: '/Mikołaj_Gramowski_CV.pdf', labelKey: 'cv', isExternal: true }, // Added CV link
   ];
 
   return (
@@ -98,6 +99,8 @@ const Header = () => {
               <motion.li key={item.href} variants={navItemVariants}>
                 <Link
                   href={item.href}
+                  target={item.isExternal ? '_blank' : undefined}
+                  rel={item.isExternal ? 'noopener noreferrer' : undefined}
                   className={`hover:bg-sky-500/20 ${
                     isScrolled ? 'text-slate-100 hover:text-white' : 'text-slate-800 hover:text-sky-600'
                   } transition-all duration-200 px-3 py-2 rounded-md text-sm font-medium`}
@@ -143,6 +146,8 @@ const Header = () => {
               >
                 <Link
                   href={item.href}
+                  target={item.isExternal ? '_blank' : undefined}
+                  rel={item.isExternal ? 'noopener noreferrer' : undefined}
                   onClick={toggleMobileMenu} // Close menu on click
                   className="block text-slate-100 hover:text-sky-300 transition-all duration-200 py-3 px-4 rounded-md text-base font-medium w-full text-center hover:bg-slate-700/50"
                 >
