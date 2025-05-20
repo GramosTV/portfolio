@@ -166,13 +166,13 @@ export default function Home() {
         <div
           className="absolute bottom-0 left-0 right-0 z-0 opacity-15"
           style={{
-            backgroundImage: 'url("/Panorama.svg")',
-            backgroundSize: '100% 100%',
+            backgroundImage: 'url("/Panorama.png")',
+            backgroundSize: 'cover',
             backgroundPosition: 'bottom center',
             backgroundRepeat: 'no-repeat',
             width: '100%',
-            height: '50vh',
-            mixBlendMode: 'overlay',
+            height: '100%',
+            // mixBlendMode: 'overlay',
           }}
         ></div>
 
