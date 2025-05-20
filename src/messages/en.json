@@ -47,7 +47,10 @@
     "project3Tech": ["NestJS", "Node.js", "TypeScript", "Snyk", "npm audit", "CLI", "Cybersecurity"],
     "project4Title": "Healthcare API & App",
     "project4Description": "A .NET Web API backend and Angular frontend for a healthcare application providing authentication, user management, appointment scheduling, messaging, and reminders.",
-    "project4Tech": "ASP.NET Core, Entity Framework Core, MySQL, JWT, Angular"
+    "project4Tech": "ASP.NET Core, Entity Framework Core, MySQL, JWT, Angular, Angular CLI",
+    "project5Title": "Medivuno - Healthcare Platform",
+    "project5Description": "A comprehensive healthcare platform with an Angular client and Go backend. Features include user authentication, role-based access (Patient, Doctor, Admin), appointment scheduling, medical record management with attachments, and secure messaging.",
+    "project5Tech": "Angular, Go, Gin, GORM, MySQL, JWT, Node.js, Angular CLI"
   },
   "Education": {
     "title": "Education",
@@ -227,7 +230,27 @@
     "technologiesUsed": "Technologies Used:",
     "project4Title": "Healthcare API & App",
     "project4Description": "A comprehensive healthcare solution featuring a .NET Web API backend and an Angular frontend. It supports JWT-based authentication, user management with role-based access control, appointment scheduling, secure messaging between patients and providers, and automated reminders.",
-    "project4TechStack": ["ASP.NET Core", "Entity Framework Core", "MySQL", "JWT Authentication", "Angular"],
+    "project4TechStack": [
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "MySQL",
+      "JWT Authentication",
+      "Angular",
+      "Angular CLI"
+    ],
+    "project5Title": "Medivuno - Healthcare Platform",
+    "project5Description": "A comprehensive healthcare solution featuring an Angular frontend and a Go (Gin) backend. It supports JWT-based authentication, role-based access control for patients, doctors, and administrators, appointment scheduling, detailed medical record management with file attachments, and a secure internal messaging system.",
+    "project5TechStack": [
+      "Angular",
+      "Angular CLI",
+      "Node.js",
+      "Go",
+      "Gin",
+      "GORM",
+      "MySQL",
+      "JWT Authentication",
+      "Tailwind CSS"
+    ],
     "testimonial1Quote": "The creator worked hard, and finished the product quickly, and professionally. He asked a lot of questions, and did his best to deliver the product with every satisfying detail I asked for. Overall, he did a professional job, and I'd recommend him to others.",
     "testimonial1Name": "kane40xwolfman",
     "testimonial1Role": "Fiverr Client",

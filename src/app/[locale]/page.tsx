@@ -104,6 +104,13 @@ export default function Home() {
       projectUrl: 'https://github.com/GramosTV/zelqora-client',
       techStack: t.raw('project4TechStack') as string[],
     },
+    {
+      titleKey: 'project5Title',
+      descriptionKey: 'project5Description',
+      imageUrl: '/medivuno.png', // You may need to add this image to your public folder
+      projectUrl: 'https://github.com/GramosTV/medivuno-client', // Placeholder URL
+      techStack: t.raw('project5TechStack') as string[],
+    },
   ];
 
   const testimonialsData = [

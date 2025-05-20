@@ -47,7 +47,10 @@
     "project3Tech": ["NestJS", "Node.js", "TypeScript", "Snyk", "npm audit", "CLI", "Cybersecurity"],
     "project4Title": "API i Aplikacja Opieki Zdrowotnej",
     "project4Description": "Backend .NET Web API i frontend Angular dla aplikacji opieki zdrowotnej, zapewniające uwierzytelnianie, zarządzanie użytkownikami, planowanie wizyt, przesyłanie wiadomości i przypomnienia.",
-    "project4Tech": "ASP.NET Core, Entity Framework Core, MySQL, JWT, Angular"
+    "project4Tech": "ASP.NET Core, Entity Framework Core, MySQL, JWT, Angular, Angular CLI",
+    "project5Title": "Medivuno - Platforma Opieki Zdrowotnej",
+    "project5Description": "Kompleksowa platforma opieki zdrowotnej z klientem Angular i backendem Go. Funkcje obejmują uwierzytelnianie użytkowników, dostęp oparty na rolach (Pacjent, Lekarz, Admin), planowanie wizyt, zarządzanie dokumentacją medyczną z załącznikami oraz bezpieczne przesyłanie wiadomości.",
+    "project5Tech": "Angular, Go, Gin, GORM, MySQL, JWT, Node.js, Angular CLI"
   },
   "Education": {
     "title": "Edukacja",
@@ -236,7 +239,27 @@
     "technologiesUsed": "Użyte Technologie:",
     "project4Title": "API i Aplikacja Opieki Zdrowotnej",
     "project4Description": "Kompleksowe rozwiązanie dla opieki zdrowotnej obejmujące backend .NET Web API oraz frontend Angular. Obsługuje uwierzytelnianie oparte na JWT, zarządzanie użytkownikami z kontrolą dostępu opartą na rolach, planowanie wizyt, bezpieczne przesyłanie wiadomości między pacjentami a dostawcami usług oraz automatyczne przypomnienia.",
-    "project4TechStack": ["ASP.NET Core", "Entity Framework Core", "MySQL", "JWT Authentication", "Angular"],
+    "project4TechStack": [
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "MySQL",
+      "JWT Authentication",
+      "Angular",
+      "Angular CLI"
+    ],
+    "project5Title": "Medivuno - Platforma Opieki Zdrowotnej",
+    "project5Description": "Kompleksowa platforma opieki zdrowotnej z klientem Angular i backendem Go. Funkcje obejmują uwierzytelnianie użytkowników, dostęp oparty na rolach (Pacjent, Lekarz, Admin), planowanie wizyt, zarządzanie dokumentacją medyczną z załącznikami oraz bezpieczne przesyłanie wiadomości.",
+    "project5TechStack": [
+      "Angular",
+      "Angular CLI",
+      "Node.js",
+      "Go",
+      "Gin",
+      "GORM",
+      "MySQL",
+      "JWT Authentication",
+      "Tailwind CSS"
+    ],
     "testimonial1Quote": "Twórca ciężko pracował i szybko oraz profesjonalnie ukończył produkt. Zadawał wiele pytań i robił wszystko, co w jego mocy, aby dostarczyć produkt z każdym satysfakcjonującym szczegółem, o który prosiłem. Ogólnie rzecz biorąc, wykonał profesjonalną pracę i poleciłbym go innym.",
     "testimonial1Name": "kane40xwolfman",
     "testimonial1Role": "Klient Fiverr",
