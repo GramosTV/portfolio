@@ -50,7 +50,10 @@
     "project4Tech": "ASP.NET Core, Entity Framework Core, MySQL, JWT, Angular, Angular CLI",
     "project5Title": "Medivuno - Platforma Opieki Zdrowotnej",
     "project5Description": "Kompleksowa platforma opieki zdrowotnej z klientem Angular i backendem Go. Funkcje obejmują uwierzytelnianie użytkowników, dostęp oparty na rolach (Pacjent, Lekarz, Admin), planowanie wizyt, zarządzanie dokumentacją medyczną z załącznikami oraz bezpieczne przesyłanie wiadomości.",
-    "project5Tech": "Angular, Go, Gin, GORM, MySQL, JWT, Node.js, Angular CLI"
+    "project5Tech": "Angular, Go, Gin, GORM, MySQL, JWT, Node.js, Angular CLI",
+    "project6Title": "Payflow - Portfel Cyfrowy",
+    "project6Description": "Aplikacja portfela cyfrowego z frontendem Angular i backendem Spring Boot. Funkcje obejmują bezpieczne uwierzytelnianie użytkowników, zarządzanie saldem, historię transakcji oraz płatności P2P.",
+    "project6Tech": ["Angular", "Spring Boot", "Java", "MySQL", "JWT", "RESTful APIs"]
   },
   "Education": {
     "title": "Edukacja",
@@ -259,6 +262,20 @@
       "MySQL",
       "JWT Authentication",
       "Tailwind CSS"
+    ],
+    "project6Title": "Payflow - Portfel Cyfrowy i Płatności P2P",
+    "project6Description": "Zaprojektowano kompleksowe rozwiązanie portfela cyfrowego, Payflow, z responsywnym frontendem Angular i solidnym backendem Spring Boot. Platforma obsługuje bezpieczne uwierzytelnianie użytkowników (JWT), zarządzanie saldem w czasie rzeczywistym, szczegółową historię transakcji oraz funkcje płatności peer-to-peer (P2P). Zaprojektowana pod kątem skalowalności i bezpieczeństwa, wykorzystująca RESTful API do płynnej komunikacji.",
+    "project6TechStack": [
+      "Angular",
+      "Angular CLI",
+      "Spring Boot",
+      "Spring Security",
+      "Java",
+      "MySQL",
+      "JPA/Hibernate",
+      "JWT Authentication",
+      "RESTful APIs",
+      "Maven"
     ],
     "testimonial1Quote": "Twórca ciężko pracował i szybko oraz profesjonalnie ukończył produkt. Zadawał wiele pytań i robił wszystko, co w jego mocy, aby dostarczyć produkt z każdym satysfakcjonującym szczegółem, o który prosiłem. Ogólnie rzecz biorąc, wykonał profesjonalną pracę i poleciłbym go innym.",
     "testimonial1Name": "kane40xwolfman",
