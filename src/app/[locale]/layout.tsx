@@ -8,6 +8,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import AnimatedGradientBackground from '@/app/components/AnimatedGradientBackground';
 import { locales } from '@/i18n';
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -50,6 +51,7 @@ export default async function RootLayout({
             <Footer />
           </div>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
