@@ -4,19 +4,36 @@ import '../globals.css'; // Corrected path
 import '../responsive.css'; // Added responsive improvements
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { NextIntlClientProvider, useMessages } from 'next-intl'; // Import useMessages
+import { getMessages, getTranslations } from 'next-intl/server'; // Import getTranslations
 import AnimatedGradientBackground from '@/app/components/AnimatedGradientBackground';
 import { locales } from '@/i18n';
 import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Mikołaj Gramowski - Full Stack Developer',
-  description:
-    'Personal website of Mikołaj Gramowski, a Full Stack Developer showcasing projects, skills, and experience.',
-};
+// Generate metadata dynamically based on locale
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'PageContent' });
+
+  return {
+    title: t('metadataTitle'),
+    description: t('metadataDescription'),
+    keywords: t('metadataKeywords'),
+    openGraph: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      type: 'website',
+      locale: locale,
+      siteName: t('ogSiteName'),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+    },
+  };
+}
 
 // Generate static params for all supported locales
 export function generateStaticParams() {
@@ -30,11 +47,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Safely extract and validate the locale
-
   const locale = params?.locale || 'en';
-
-  // Get messages for this locale
   const messages = await getMessages({ locale });
 
   return (

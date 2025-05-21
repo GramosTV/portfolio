@@ -163,6 +163,12 @@
     "backToHome": "Powrót na stronę główną"
   },
   "PageContent": {
+    "metadataTitle": "Mikołaj Gramowski - Ekspert Full Stack Developer | Next.js, NestJS, React",
+    "metadataDescription": "Oficjalne portfolio Mikołaja Gramowskiego. Ekspert Full Stack Developer specjalizujący się w Next.js, NestJS, React, TypeScript oraz nowoczesnych rozwiązaniach webowych i mobilnych. Odkryj innowacyjne projekty i doświadczenie zawodowe.",
+    "metadataKeywords": "Full Stack Developer, Mikołaj Gramowski, Next.js, NestJS, React, TypeScript, Web Developer, Mobile Developer, Inżynier Oprogramowania, Portfolio, JavaScript, Node.js, Rozwój API, Frontend, Backend",
+    "ogTitle": "Mikołaj Gramowski - Portfolio Full Stack Developer",
+    "ogDescription": "Odkryj innowacyjne projekty i wiedzę Mikołaja Gramowskiego, Full Stack Developera skupionego na nowoczesnych technologiach webowych i mobilnych.",
+    "ogSiteName": "Mikołaj Gramowski - Portfolio",
     "heroName": "Mikołaj Gramowski",
     "heroSubtitle": "Full Stack Web & Mobile Developer | Architekt Ekosystemów Webowych i Mobilnych Nowej Generacji.",
     "heroCta": "Rozpocznij Współpracę",
