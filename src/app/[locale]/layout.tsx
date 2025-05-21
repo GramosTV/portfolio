@@ -4,7 +4,7 @@ import '../globals.css'; // Corrected path
 import '../responsive.css'; // Added responsive improvements
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
-import { NextIntlClientProvider, useMessages } from 'next-intl'; // Import useMessages
+import { NextIntlClientProvider } from 'next-intl'; // Import useMessages
 import { getMessages, getTranslations } from 'next-intl/server'; // Import getTranslations
 import AnimatedGradientBackground from '@/app/components/AnimatedGradientBackground';
 import { locales } from '@/i18n';
