@@ -79,6 +79,29 @@
       "Tailwind CSS",
       "JWT",
       "Git"
+    ],
+    "project8Title": "Artyap",
+    "project8Description": "A Vue.js client and Django server application for browsing and interacting with art from the Art Institute of Chicago. Features user authentication, artwork browsing, trending and search, and user settings.",
+    "project8TechStack": [
+      "Vue.js 3",
+      "TypeScript",
+      "Pinia",
+      "Vue Router",
+      "SCSS",
+      "FontAwesome",
+      "Axios",
+      "Django",
+      "Django REST framework",
+      "Python Decouple",
+      "MySQL"
+    ],
+    "project9Title": "Artyap Server",
+    "project9Description": "A Django REST API backend for the Artyap project, serving data from the Art Institute of Chicago. Features MySQL integration, Python Decouple, and a local data copy for fast access.",
+    "project9TechStack": [
+      "Django",
+      "Django REST framework",
+      "Python Decouple",
+      "MySQL"
     ]
   },
   "Education": {
@@ -314,6 +337,29 @@
       "Tailwind CSS",
       "JWT",
       "Git"
+    ],
+    "project8Title": "Artyap",
+    "project8Description": "A Vue.js client and Django server application for browsing and interacting with art from the Art Institute of Chicago. Features user authentication, artwork browsing, trending and search, and user settings.",
+    "project8TechStack": [
+      "Vue.js 3",
+      "TypeScript",
+      "Pinia",
+      "Vue Router",
+      "SCSS",
+      "FontAwesome",
+      "Axios",
+      "Django",
+      "Django REST framework",
+      "Python Decouple",
+      "MySQL"
+    ],
+    "project9Title": "Artyap Server",
+    "project9Description": "A Django REST API backend for the Artyap project, serving data from the Art Institute of Chicago. Features MySQL integration, Python Decouple, and a local data copy for fast access.",
+    "project9TechStack": [
+      "Django",
+      "Django REST framework",
+      "Python Decouple",
+      "MySQL"
     ],
     "testimonial1Quote": "The creator worked hard, and finished the product quickly, and professionally. He asked a lot of questions, and did his best to deliver the product with every satisfying detail I asked for. Overall, he did a professional job, and I'd recommend him to others.",
     "testimonial1Name": "kane40xwolfman",

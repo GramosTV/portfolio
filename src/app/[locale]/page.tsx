@@ -125,6 +125,13 @@ export default function Home() {
       projectUrl: 'https://github.com/MikiGram/headhunter-frontend', // Assuming a GitHub link, replace if different
       techStack: t.raw('project7TechStack') as string[],
     },
+    {
+      titleKey: 'project8Title',
+      descriptionKey: 'project8Description',
+      imageUrl: '/artyap.png',
+      projectUrl: 'https://github.com/GramosTV/artyap-client',
+      techStack: t.raw('project8TechStack') as string[],
+    },
   ];
 
   const testimonialsData = [
