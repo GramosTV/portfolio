@@ -118,6 +118,13 @@ export default function Home() {
       projectUrl: 'https://github.com/GramosTV/payflow-client', // Replace with actual URL if different
       techStack: t.raw('project6TechStack') as string[],
     },
+    {
+      titleKey: 'project7Title',
+      descriptionKey: 'project7Description',
+      imageUrl: '/headhunter.png', // Placeholder image, user to replace
+      projectUrl: 'https://github.com/MikiGram/headhunter-frontend', // Assuming a GitHub link, replace if different
+      techStack: t.raw('project7TechStack') as string[],
+    },
   ];
 
   const testimonialsData = [

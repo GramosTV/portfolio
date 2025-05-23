@@ -67,6 +67,18 @@
       "Mockito",
       "Maven",
       "Docker"
+    ],
+    "project7Title": "Megak Head Hunter 15",
+    "project7Description": "A comprehensive platform for recruiters and job seekers, developed as a group project where I served as the technical leader. The project features advanced search and filtering, user profiles, application tracking, and a modern UI/UX. Built with React, Node.js, and MySQL.",
+    "project7TechStack": [
+
+      "React",
+      "Node.js",
+      "MySQL",
+      "Express.js",
+      "Tailwind CSS",
+      "JWT",
+      "Git"
     ]
   },
   "Education": {
@@ -290,6 +302,18 @@
       "Mockito",
       "Maven",
       "Docker"
+    ],
+    "project7Title": "Megak Head Hunter 15",
+    "project7Description": "A comprehensive platform for recruiters and job seekers, developed as a group project where I served as the technical leader. The project features advanced search and filtering, user profiles, application tracking, and a modern UI/UX. Built with React, Node.js, and MySQL.",
+    "project7TechStack": [
+
+      "React",
+      "Node.js",
+      "MySQL",
+      "Express.js",
+      "Tailwind CSS",
+      "JWT",
+      "Git"
     ],
     "testimonial1Quote": "The creator worked hard, and finished the product quickly, and professionally. He asked a lot of questions, and did his best to deliver the product with every satisfying detail I asked for. Overall, he did a professional job, and I'd recommend him to others.",
     "testimonial1Name": "kane40xwolfman",

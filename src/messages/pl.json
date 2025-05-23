@@ -53,29 +53,10 @@
     "project5Tech": "Angular, Go, Gin, GORM, MySQL, JWT, Node.js, Angular CLI",
     "project6Title": "Payflow - Portfel Cyfrowy",
     "project6Description": "Aplikacja portfela cyfrowego z frontendem Angular i backendem Spring Boot. Funkcje obejmują bezpieczne uwierzytelnianie użytkowników, zarządzanie saldem, historię transakcji oraz płatności P2P.",
-    "project6Tech": ["Angular", "Spring Boot", "Java", "MySQL", "JWT", "RESTful APIs"]
-  },
-  "Education": {
-    "title": "Edukacja",
-    "nhlTitle": "Technologie Informacyjne",
-    "nhlSubtitle": "NHL Stenden, Holandia",
-    "nhlDate": "2024 - 2028",
-    "nhlDescription": "Obecnie realizuję studia licencjackie na kierunku Informatyka.",
-    "megakTitle": "Roczny Bootcamp Fullstack “MegaK”",
-    "megakDate": "2021 - 2022",
-    "megakDescription": "Intensywne szkolenie z React, MySQL & NestJS.",
-    "borowczykTitle": "Kursy Frontendowe Bartłomieja Borowczyka",
-    "borowczykDate": "2019 - 2020",
-    "borowczykDescription": "Skupione na HTML, CSS, Javascript, React & Node."
-  },
-  "Skills": {
-    "title": "Umiejętności",
-    "advanced": "Zaawansowane",
-    "beginner": "Podstawowe",
-    "englishCertificate": "Angielski C1 (certyfikat IELTS)"
-  },
-  "Testimonials": {
-    "title": "Referencje",
+    "project6Tech": ["Angular", "Spring Boot", "Java", "MySQL", "JWT", "RESTful APIs"],
+    "project7Title": "Megak Head Hunter 15",
+    "project7Description": "Kompleksowa platforma dla rekruterów i osób poszukujących pracy, opracowana jako projekt grupowy, w którym pełniłem rolę lidera technicznego. Projekt oferuje zaawansowane wyszukiwanie i filtrowanie, profile użytkowników, śledzenie aplikacji oraz nowoczesny interfejs użytkownika. Zbudowany przy użyciu React, Node.js i MySQL.",
+    "project7TechStack": ["/React", "/Node.js", "/MySQL", "/Express.js", "/Tailwind CSS", "/JWT", "/Git"],
     "testimonial1Quote": "Twórca ciężko pracował i szybko oraz profesjonalnie ukończył produkt. Zadawał wiele pytań i robił wszystko, co w jego mocy, aby dostarczyć produkt z każdym satysfakcjonującym szczegółem, o który prosiłem. Ogólnie rzecz biorąc, wykonał profesjonalną pracę i poleciłbym go innym.",
     "testimonial1Name": "kane40xwolfman",
     "testimonial1Role": "Klient Fiverr",
@@ -283,6 +264,9 @@
       "RESTful APIs",
       "Maven"
     ],
+    "project7Title": "Megak Head Hunter 15",
+    "project7Description": "Kompleksowa platforma dla rekruterów i osób poszukujących pracy, opracowana jako projekt grupowy, w którym pełniłem rolę lidera technicznego. Projekt oferuje zaawansowane wyszukiwanie i filtrowanie, profile użytkowników, śledzenie aplikacji oraz nowoczesny interfejs użytkownika. Zbudowany przy użyciu React, Node.js i MySQL.",
+    "project7TechStack": ["React", "Node.js", "MySQL", "Express.js", "Tailwind CSS", "JWT", "Git"],
     "testimonial1Quote": "Twórca ciężko pracował i szybko oraz profesjonalnie ukończył produkt. Zadawał wiele pytań i robił wszystko, co w jego mocy, aby dostarczyć produkt z każdym satysfakcjonującym szczegółem, o który prosiłem. Ogólnie rzecz biorąc, wykonał profesjonalną pracę i poleciłbym go innym.",
     "testimonial1Name": "kane40xwolfman",
     "testimonial1Role": "Klient Fiverr",
