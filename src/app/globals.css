@@ -55,3 +55,69 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* Enhanced mobile visibility for animations */
+@media (max-width: 768px) {
+  /* Ensure sections are properly visible on mobile */
+  section {
+    min-height: auto;
+    width: 100%;
+  }
+  
+  /* Improve touch scrolling on iOS */
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Ensure animations trigger properly on mobile */
+  .framer-motion-section {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+/* Ensure proper viewport on mobile browsers */
+@supports (-webkit-touch-callout: none) {
+  /* iOS Safari specific fixes */
+  html {
+    height: -webkit-fill-available;
+  }
+  
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Enhanced mobile visibility for animations */
+@media (max-width: 768px) {
+  /* Ensure sections are properly visible on mobile */
+  section {
+    min-height: auto;
+    width: 100%;
+  }
+  
+  /* Improve touch scrolling on iOS */
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Ensure animations trigger properly on mobile */
+  .framer-motion-section {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+/* Ensure proper viewport on mobile browsers */
+@supports (-webkit-touch-callout: none) {
+  /* iOS Safari specific fixes */
+  html {
+    height: -webkit-fill-available;
+  }
+  
+  body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+}

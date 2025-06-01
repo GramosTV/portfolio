@@ -13,21 +13,19 @@ interface SectionProps {
 const Section: React.FC<SectionProps> = ({ id, titleKey, children, className }) => {
   const t = useTranslations('PageContent'); // Assuming PageContent contains section titles
 
-  return (
-    <motion.section
+  return (    <motion.section
       id={id}
       className={`py-12 sm:py-16 md:py-20 lg:py-24 px-4 ${className}`}
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
     >
-      <div className="container mx-auto">
-        <motion.h2
+      <div className="container mx-auto">        <motion.h2
           className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 text-center text-slate-700 tracking-tight"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
         >
           {t(titleKey)} {/* Use translation for the title */}
