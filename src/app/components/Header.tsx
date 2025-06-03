@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const navItemVariantsContainer = {
@@ -30,6 +30,7 @@ const logoVariant = {
 
 const Header = () => {
   const t = useTranslations('Header');
+  const locale = useLocale();
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -49,6 +50,9 @@ const Header = () => {
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
+  // Dynamically set CV path based on current locale
+  const cvPath = locale === 'pl' ? '/CV_pl.pdf' : '/CV_en.pdf';
+
   const navLinks = [
     { href: '#about', labelKey: 'about' },
     { href: '#experience', labelKey: 'experience' },
@@ -57,7 +61,7 @@ const Header = () => {
     { href: '#skills', labelKey: 'skills' },
     { href: '#testimonials', labelKey: 'testimonials' },
     { href: '#contact', labelKey: 'contact' },
-    { href: '/Mikołaj_Gramowski_CV.pdf', labelKey: 'cv', isExternal: true }, // Added CV link
+    { href: cvPath, labelKey: 'cv', isExternal: true }, // Dynamic CV link based on locale
   ];
 
   return (
