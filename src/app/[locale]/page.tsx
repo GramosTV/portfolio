@@ -105,13 +105,6 @@ export default function Home() {
       techStack: t.raw('project4TechStack') as string[],
     },
     {
-      titleKey: 'project5Title',
-      descriptionKey: 'project5Description',
-      imageUrl: '/medivuno.png',
-      projectUrl: 'https://github.com/GramosTV/medivuno-client',
-      techStack: t.raw('project5TechStack') as string[],
-    },
-    {
       titleKey: 'project6Title',
       descriptionKey: 'project6Description',
       imageUrl: '/payflow.png', // Ensure this image exists in the public folder
@@ -128,8 +121,8 @@ export default function Home() {
     {
       titleKey: 'project8Title',
       descriptionKey: 'project8Description',
-      imageUrl: '/artyap.png',
-      projectUrl: 'https://github.com/GramosTV/artyap-client',
+      imageUrl: '/secure-vault.png', // Using existing security.png as it fits the encryption theme
+      projectUrl: 'https://github.com/GramosTV/secure-vault', // Update with actual repository URL
       techStack: t.raw('project8TechStack') as string[],
     },
   ];

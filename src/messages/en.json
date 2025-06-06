@@ -44,13 +44,9 @@
     "project2Tech": "NestJS, JWT, TypeORM, PostgreSQL, Bcrypt, Fastify, Handlebars, Passport.js, TypeScript",
     "project3Title": "NestJS Security Scan",
     "project3Description": "A powerful security vulnerability scanner for NestJS applications. Features dependency scanning (npm audit, Snyk), code analysis for common security issues, configuration validation, detailed reports, and a CLI interface.",
-    "project3Tech": ["NestJS", "Node.js", "TypeScript", "Snyk", "npm audit", "CLI", "Cybersecurity"],
-    "project4Title": "Healthcare API & App",
+    "project3Tech": ["NestJS", "Node.js", "TypeScript", "Snyk", "npm audit", "CLI", "Cybersecurity"],    "project4Title": "Healthcare API & App",
     "project4Description": "A .NET Web API backend and Angular frontend for a healthcare application providing authentication, user management, appointment scheduling, messaging, and reminders.",
     "project4Tech": "ASP.NET Core, Entity Framework Core, MySQL, JWT, Angular, Angular CLI",
-    "project5Title": "Medivuno - Healthcare Platform",
-    "project5Description": "A comprehensive healthcare platform with an Angular client and Go backend. Features include user authentication, role-based access (Patient, Doctor, Admin), appointment scheduling, medical record management with attachments, and secure messaging.",
-    "project5Tech": ["Angular", "Golang", "PostgreSQL", "Docker", "Stripe", "Google Cloud"],
     "project6Title": "Payflow - Digital Wallet System",
     "project6Description": "A full-stack fintech web application simulating a modern digital wallet system. Features include multi-currency wallets, P2P transfers, money requests, and QR code payments. The client is built with Angular and Tailwind CSS, while the server uses Spring Boot and Java.",
     "project6Tech": [
@@ -67,10 +63,8 @@
       "Mockito",
       "Maven",
       "Docker"
-    ],
-    "project7Title": "Megak Head Hunter 15",
-    "project7Description": "A comprehensive platform for recruiters and job seekers, developed as a group project where I served as the technical leader. The project features advanced search and filtering, user profiles, application tracking, and a modern UI/UX. Built with React, Node.js, and MySQL.",
-    "project7TechStack": [
+    ],    "project7Title": "Megak Head Hunter 15",
+    "project7Description": "A comprehensive platform for recruiters and job seekers, developed as a group project where I served as the technical leader. The project features advanced search and filtering, user profiles, application tracking, and a modern UI/UX. Built with React, Node.js, and MySQL.",    "project7TechStack": [
 
       "React",
       "Node.js",
@@ -80,28 +74,19 @@
       "JWT",
       "Git"
     ],
-    "project8Title": "Artyap",
-    "project8Description": "A Vue.js client and Django server application for browsing and interacting with art from the Art Institute of Chicago. Features user authentication, artwork browsing, trending and search, and user settings.",
+    "project8Title": "Secure Vault",
+    "project8Description": "A modern encryption application for secure message sharing using industry-standard encryption algorithms. Features AES, ChaCha20, and DES encryption with React frontend and Spring Boot backend for secure message encryption and decryption.",
     "project8TechStack": [
-      "Vue.js 3",
+      "React",
       "TypeScript",
-      "Pinia",
-      "Vue Router",
-      "SCSS",
-      "FontAwesome",
-      "Axios",
-      "Django",
-      "Django REST framework",
-      "Python Decouple",
-      "MySQL"
-    ],
-    "project9Title": "Artyap Server",
-    "project9Description": "A Django REST API backend for the Artyap project, serving data from the Art Institute of Chicago. Features MySQL integration, Python Decouple, and a local data copy for fast access.",
-    "project9TechStack": [
-      "Django",
-      "Django REST framework",
-      "Python Decouple",
-      "MySQL"
+      "Tailwind CSS",
+      "Spring Boot",
+      "Spring Security",
+      "MySQL",
+      "JWT",
+      "Java Cryptography",
+      "Vite",
+      "Maven"
     ]
   },
   "Education": {
@@ -287,27 +272,13 @@
     "viewProjectButton": "View Project",
     "technologiesUsed": "Technologies Used:",
     "project4Title": "Healthcare API & App",
-    "project4Description": "A comprehensive healthcare solution featuring a .NET Web API backend and an Angular frontend. It supports JWT-based authentication, user management with role-based access control, appointment scheduling, secure messaging between patients and providers, and automated reminders.",
-    "project4TechStack": [
+    "project4Description": "A comprehensive healthcare solution featuring a .NET Web API backend and an Angular frontend. It supports JWT-based authentication, user management with role-based access control, appointment scheduling, secure messaging between patients and providers, and automated reminders.",    "project4TechStack": [
       "ASP.NET Core",
       "Entity Framework Core",
       "MySQL",
       "JWT Authentication",
       "Angular",
       "Angular CLI"
-    ],
-    "project5Title": "Medivuno - Healthcare Platform",
-    "project5Description": "A comprehensive healthcare solution featuring an Angular frontend and a Go (Gin) backend. It supports JWT-based authentication, role-based access control for patients, doctors, and administrators, appointment scheduling, detailed medical record management with file attachments, and a secure internal messaging system.",
-    "project5TechStack": [
-      "Angular",
-      "Angular CLI",
-      "Node.js",
-      "Go",
-      "Gin",
-      "GORM",
-      "MySQL",
-      "JWT Authentication",
-      "Tailwind CSS"
     ],
     "project6Title": "Payflow - Digital Wallet System",
     "project6Description": "A full-stack fintech web application simulating a modern digital wallet system. Features include multi-currency wallets, P2P transfers, money requests, and QR code payments. The client is built with Angular and Tailwind CSS, while the server uses Spring Boot and Java.",
@@ -336,30 +307,20 @@
       "Express.js",
       "Tailwind CSS",
       "JWT",
-      "Git"
-    ],
-    "project8Title": "Artyap",
-    "project8Description": "A Vue.js client and Django server application for browsing and interacting with art from the Art Institute of Chicago. Features user authentication, artwork browsing, trending and search, and user settings.",
+      "Git"    ],
+    "project8Title": "Secure Vault",
+    "project8Description": "A modern encryption application for secure message sharing using industry-standard encryption algorithms. Features AES, ChaCha20, and DES encryption with React frontend and Spring Boot backend for secure message encryption and decryption.",
     "project8TechStack": [
-      "Vue.js 3",
+      "React",
       "TypeScript",
-      "Pinia",
-      "Vue Router",
-      "SCSS",
-      "FontAwesome",
-      "Axios",
-      "Django",
-      "Django REST framework",
-      "Python Decouple",
-      "MySQL"
-    ],
-    "project9Title": "Artyap Server",
-    "project9Description": "A Django REST API backend for the Artyap project, serving data from the Art Institute of Chicago. Features MySQL integration, Python Decouple, and a local data copy for fast access.",
-    "project9TechStack": [
-      "Django",
-      "Django REST framework",
-      "Python Decouple",
-      "MySQL"
+      "Tailwind CSS",
+      "Spring Boot",
+      "Spring Security",
+      "MySQL",
+      "JWT",
+      "Java Cryptography",
+      "Vite",
+      "Maven"
     ],
     "testimonial1Quote": "The creator worked hard, and finished the product quickly, and professionally. He asked a lot of questions, and did his best to deliver the product with every satisfying detail I asked for. Overall, he did a professional job, and I'd recommend him to others.",
     "testimonial1Name": "kane40xwolfman",
